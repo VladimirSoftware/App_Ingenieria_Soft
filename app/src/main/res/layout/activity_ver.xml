@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Entidades.VerActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="Edit or delete Contact"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/viewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:labelFor="@+id/viewName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/viewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:labelFor="@+id/viewPass"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_button"
+        android:backgroundTint="@color/colorAccent"
+        android:radius="15dp"
+        android:text="Save changes"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/btnlista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to the list"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="@color/colorAccent"
+        android:radius="15dp"
+        android:layout_below="@+id/btnsignup"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom|center"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/invo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Tu Factura del mes"
+        android:textColor="#2C2828"
+        android:textColorHint="#2C2828"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="50dp"
+        android:hint="Valor: 5 USD suscripción mensual"
+        android:textColor="#2C2828"
+        android:textColorHint="#2C2828"
+        android:textSize="20sp" />
+
+
+
+    <Button
+        android:id="@+id/btnspse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a PSE para pagar"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="@color/colorAccent"
+        android:radius="15dp"
+        android:layout_below="@+id/password"/>
+
+</RelativeLayout>
